@@ -1,0 +1,15 @@
+{
+  "name": "backend-pals-example",
+  "version": "1.0.0",
+  "description": "Example for a full backend application",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "keywords": [
+    "backend",
+    "example"
+  ],
+  "author": "Gustavo Pals",
+  "license": "ISC"
+}
