@@ -6,7 +6,10 @@
 	"scripts": {
 		"dev": "tsx watch --inspect src/server.ts",
 		"build": "tsc -p .",
-		"start": "node dist/server.js"
+		"start": "node dist/server.js",
+		"prisma:generate": "prisma generate --schema=src/shared/database/prisma/schema.prisma",
+		"prisma:migrate": "prisma migrate dev --schema=src/shared/database/prisma/schema.prisma",
+		"prisma:studio": "prisma studio --schema=src/shared/database/prisma/schema.prisma"
 	},
 	"keywords": [
 		"backend",
