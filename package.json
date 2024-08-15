@@ -4,7 +4,7 @@
 	"description": "Example for a full backend application",
 	"main": "server.js",
 	"scripts": {
-		"dev": "tsx watch src/server.ts",
+		"dev": "tsx watch --inspect src/server.ts",
 		"build": "tsc -p .",
 		"start": "node dist/server.js"
 	},
@@ -15,9 +15,11 @@
 	"author": "Gustavo Pals",
 	"license": "ISC",
 	"dependencies": {
+		"cors": "^2.8.5",
 		"express": "^4.19.2"
 	},
 	"devDependencies": {
+		"@types/cors": "^2.8.17",
 		"@types/express": "^4.17.21",
 		"tsx": "^4.17.0",
 		"typescript": "^5.5.4"
